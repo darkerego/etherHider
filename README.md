@@ -20,8 +20,13 @@ this Ether. Basically you just need to generate a salt, compute the address by
 calling `computeInitCode`, send the 
 Ether to that address, and DON'T LOOSE THE SALT! When the day comes that you need to 
 retrieve that ether, you simply run `retrieveEther` with that salt, which will deploy 
-a contract at that address with the most minimal bytecode ever: 0x33ff, seriously, 
-that's it! The contract will selfdestruct and the deployer contract will forward all 
+a contract at that address with the most minimal bytecode ever: 
+</p>
+<pre>
+0x33ff
+</pre>
+<p>
+Seriously, that's it! The contract will selfdestruct and the deployer contract will forward all 
 the funds to you (the EOA that made the call, which must be the admin).
 </p>
 
