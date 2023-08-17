@@ -56,3 +56,4 @@ this is really beta, if you use it.
 
 - Python Tool to interact with contract and securely store salts in a local database 
 - Helper/Wrapper functions to deploy the `destructLaterInitCode`
+- Python tool to deploy the contract factory.
